@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+body{
+    background: url('./static/bg3.jpg') no-repeat center center/cover;
+}
+h1{
+    text-align: center;
+    margin: 12px;
+    color:#580009;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: bolder;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.myInput{
+    width: 30%;
+    padding: 10px;
+    margin: 8px;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 6px 17px 0px rgb(0, 0, 0);
+    border-radius: 11px;
+    outline: none;
+}
+.btn{
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 12px;
+    color: wheat;
+    background: #270004;
+    margin: 7px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    /* border: none; */
+    
+}
+.container{
+    margin: 60px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* @media (min-width:800px) 
+{
+    .container{
+        display: block;
+        width: 90vw;
+        height: 100vh;
+    }
+    .myForm
+    {
+        width: 90vw;
+        height: 69vh;
+    }
+    h1
+    {
+        top: 50%;
+        left: 50%;
+    }
+    .myInput
+    {
+        width: 73%;
+        height: 53px;
+    }
+} */

@@ -1,0 +1,18 @@
+{
+  "name": "prabhat-dance-hub",
+  "version": "1.0.0",
+  "description": "This is a Website for learning dance online",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prabhat",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14",
+    "parser": "^0.1.4",
+    "pug": "^3.0.2"
+  }
+}

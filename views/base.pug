@@ -1,0 +1,22 @@
+//- layout.pug
+doctype html 
+html
+  head
+    title Dimond Dance Hub 
+    block scripts 
+    block style 
+
+  body
+    nav#navbar.Top 
+        ul
+            div#logo 
+                img(src="./static/img3.png")
+                | DDH  
+            li #[a(href='/home')#active Home]
+            li #[a(href='/') About]
+            li #[a(href='/contact') Contact Us]
+            li #[a(href='/') Services]
+    block content
+    block foot
+      footer#footer 
+        | copyright 2021 - Prabhattambe10@gmail.com |  All Right Reserve 

@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{  
+    display: flex;
+    color: beige;
+    align-items: center;
+    margin: 0px 17px;
+    font-size: 20px;
+    margin-right: 33px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#logo img{
+    height: 43px;
+    filter: invert(1);
+    width: 30px;
+}
+#navbar {
+    background-color: #270004;
+    padding: 20px;
+    margin-top: 3px 3px;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#navbar li, #active{
+    list-style: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 8px;
+    color: rgb(218 218 218);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 4px;
+
+}
+#navbar li a#active{
+    text-decoration: underline;
+    color: grey;
+}
+
+#navbar li a:hover {
+    color: rgba(124, 124, 124, 0.822);
+    transition: all 0.2s ;
+}
+
+#introSection {
+    padding-top: 125px;
+    color: #ffffffd1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bolder;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.4rem;
+    align-items: center;
+    background: url('./static/bg10.jpg') no-repeat center center/cover;
+    height: 350px;
+    background-color: aquamarine;
+}
+
+#sponsersSection {
+    height: 260px;
+    background: #6b6b6b73;
+}
+#sponsers{
+    height: 200px;
+    max-width: 1000px;
+    margin: auto;
+}
+.spImage{
+    height: 70%;
+    margin: 20px;
+}
+#sponsersSection h2{
+    text-align: center;
+    padding: 14px;
+    font-size: 32px;
+    color: slategrey;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.card{
+    display: inline-block;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 11px 0px #000000bf;
+    background: #d0cfcf ;
+    border-radius: 10px;
+    width: 30%;
+    margin: 21px 20px;
+    height: 200px;
+    margin-top: -216px;
+}
+.card:hover{
+    background-color: rgb(255 107 107);
+    color: wheat;
+    cursor: pointer;
+}
+.card h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 4px 4px;
+    padding: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cardBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+
+}
+.cardImg{
+    height: 100px;
+    padding: 2px 22px ;
+    
+}
+.cardImg img{
+    height: inherit;
+}
+.cardContent{
+    padding: 0 23px;
+}
+.cardContent p{
+    font-size: 20px;
+}
+#missionSection h2{
+    height: 220px;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+#missionSection{
+    background: #4c4c4c42;
+}
+.container{
+    display: block;
+}
+
+#footer {
+    display: flex;
+    height: 50px;
+    background-color: #000000f7;
+    justify-content: center;
+    color: wheat;
+    align-items: center;
+    font-size: 18px;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#introSection div.small{
+    font-size: 27px;
+    color: grey;
+}
+@media (max-width:1200px) and (min-width:415px){
+    .card{
+        /* display: none; */
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between; */
+        display: block;
+        float: left;
+        margin: -142px 14px 4px 18px;
+    }
+    .card#card3{
+        display: block;
+        float: right;
+        /* margin-top: 3px; */
+        
+    }
+    #missionSection
+    {
+        height: 300px;
+    }
+}
+@media (min-width:414px) and (max-width:500px) {
+    .card{
+        display: flex;
+        /* display: none; */
+        flex-direction: column;
+        justify-content: center;
+     } 
+    .card#card3{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+    }
+}
+@media (max-width:800px) and (min-width:200px){
+    .container{
+        display: none;
+        height: 100vh;
+        width: 100vw;
+    }
+}

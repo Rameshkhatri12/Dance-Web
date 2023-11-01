@@ -1,0 +1,53 @@
+extends base.pug 
+
+block scripts
+  script(src='../static/index.js')
+
+block style
+    style 
+        include ../static/style.css 
+
+block content
+
+     
+
+     section#introSection 
+        div  Welcome, Dance with Night,
+        div.small and play with Lights. 
+
+     section#missionSection 
+        h2  our missions 
+        div.card
+            h3  Dance Perfection  
+            div.cardBox 
+                div.cardImg
+                    img(src="./static/img1.png")
+
+                div.cardContent
+                    p This is the Best Dance Club on earth     
+
+        div.card
+            h3  Trend Dancing 
+            div.cardBox 
+                div.cardImg
+                    img(src="./static/img2.png")
+
+                div.cardContent
+                    p This is the Best Dance Club on earth    
+
+        div.card#card3
+            h3  Expert Teaching 
+            div.cardBox 
+                div.cardImg
+                    img(src="./static/img4.png")
+
+                div.cardContent
+                    p This is the Best Dance Club on earth    
+     section#sponsersSection
+        h2  our sponsers
+        div#sponsers
+            img(src="./static/logo1.png", alt="This is sponsers image", class="spImage")
+            img(src="./static/logo2.png", alt="This is sponsers image", class="spImage")
+            img(src="./static/logo3.png", alt="This is sponsers image", class="spImage")
+            img(src="./static/logo4.png", alt="This is sponsers image", class="spImage")
+
